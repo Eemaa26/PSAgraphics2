@@ -1,0 +1,26 @@
+Package: PSAgraphics2
+Type: Package
+Title: Propensity Score Analysis
+Version: 0.9
+Date: 2013-10-25
+Author: Jason Bryer <jason@bryer.org>, James E. Helmreich
+    <James.Helmreich@Marist.edu>, Robert M. Pruzek <RMPruzek@yahoo.com>
+Maintainer: Jason Bryer <jason@bryer.org>
+URL: http://jason.bryer.org/PSAgraphics2, http://github.com/jbryer/PSAgraphics2
+BugReports: https://github.com/jbryer/PSAgraphics2/issues
+Description: Functions to assist in analyzing and visualizing propensity score
+    analysis.
+License: GPL
+LazyLoad: yes
+Depends:
+    R (>= 3.0),ggplot2,gridExtra,reshape
+Imports:
+    psych,parallel,Matching
+Suggests:
+    devtools
+Collate:
+    'PSAgraphcis2-package.R'
+    'bootmatch.R'
+    'plot.loess.R'
+    'psrange.r'
+    'psa.strata.R'

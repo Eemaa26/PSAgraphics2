@@ -1,0 +1,26 @@
+
+Version 1.0
+
+* Implemented graphics from PSAgraphics using ggplot2.
+* loess.psa optionally provides panels above and right for the density distributions
+  of the propensity scores and unadjusted outcome, respectively.
+* Added check to ensure the items parameter on the likert function is a data frame.
+  Also added an example to the likert demo to show how to use likert with only
+  one item. Hint, use the drop=FALSE parameter when subsetting.
+
+TODO
+
+* cv.bal.psa from PSAgraphics is now multibalance.plot.
+* box.psa and cat.psa from PSAgraphics is now balance.plot. This function will
+  choose the appropriate type of graphic (i.e. box versus bar) based upon the 
+  class type of the covariate.
+* balance.plot will create a grid of balance plots if more than one covariate
+  is passed in.
+* circ.psa from PSAgraphics is now circ.plot.
+* cstrata.psa is now ps.plot. This function incorporates features from other
+  functions including overlaying strata.
+* psa.boot implements bootstrap methods for matching and stratification.
+
+
+Look at Kolgomorov-Smirnov 2 sample test (bal.ks.psa) and Fisher's Exact test
+for indpendence (bal.fe.psa). bal.ms.psa
